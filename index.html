@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Jason Laning: Full-Stack Web Developer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<nav role="navigation" class="hide">
+		<div class="nav-container"></div><!--
+		 --><div class="nav-container">
+			<div class="nav-item">About</div>
+			<div class="nav-item">Portfolio</div>
+			<div class="nav-item">Contact</div>
+		</div>
+	</nav>
+	<header role="banner">
+		<h1><span class="title">Jason Laning</span><span class="divider"> | </span><span class="headline">Full-Stack Web Developer</span></h1>
+	</header>
+	<div class="wrapper">
+		<main role="main">
+			<section id="about">
+				<h2>About</h2>
+				<div class="columns">
+					<p>I am a software developer based in New York City and a recent graduate of Thinkful's Web Developer Bootcamp. At Thinkful, my studies focused on the MERN stack: Mongo, Express, React, and Node. With each part of the stack built around JavaScript, I gained extensive experience with the language, from writing server applications and configuring databases, to using the React framework to implement dynamic, interactive font-side applications that are not only lightning fast, but scale well too.</p>
+
+					<p>My journey in tech started back in the 90's at the University of Wyoming, where I studied computer science and engineering. I learned assembly language, turbo pascal and an inordinate amount of calculus, before eventually pursuing a career as a fine artist. Over the years, while working as an artist, I kept up with web design by coding portfolio websites for myself, while also securing occasional freelance work as a web designer. My first sites decades ago were built with nothing other than notepad and basic HTML, before I eventually switched to WordPress and PHP.</p>
+
+					<p>With my recent deep dive into all-things JavaScript, I've now come full circle, and am excited to be back in the thick of cutting edge web technology. My hope is to use this expertise to produce useful software that serves the most urgent needs of the cpublic, while masking the complexities of the code with easy-to-use, well-organized interfaces that create a pleasant experience for the user.</p>
+				</div>
+			</section>
+
+			<section id="porfolio">
+				<h2>Portfolio</h2>
+				<section class="project">
+					<img src="./images/artseennyc-screenshots.png" alt="ArtSEEN NYC" class="screenshot" /><!--
+		   		  --><div class="proj-descr">
+						<p><span class="proj-title">ArtSEEN NYC </span> is a social networking and discussion platform that fosters connections in the New York City art community by facilitating conversations about current art exhibitions. It is a responsive, full-stack application using the MERN stack, that makes heavy use of React and Redux on the front-end. It also relies on exhibition data from a third-party web API provided by NY Art Beat.</p>
+						<p><a href="https://artseennyc.netlify.com">Live Version</a></p> 
+						<p>GitHub repositories: <a href="https://github.com/jasonlaning/artseen-nyc-client">Client</a> / 
+						<a href="https://github.com/jasonlaning/artseen-nyc-api">Server</a></p>
+					</div>
+				</section>
+
+				<section class="project">
+					<img src="./images/futurebalance-screenshots.png" alt="future balance" class="screenshot" /><!--
+		   		  --><div class="proj-descr">
+					<p><span class="proj-title">FutureBalance </span> tracks your repeating expenses and income and generates a calendar report that forecasts your daily account balances. The crux of this project rested on devising the algorithm to forecast financial balances based on varying dates and rates of repetition for multiple expenses and income, which should be of use to anyone whose bills aren't due on the exact same day that their paychecks arrive (I used to make a monthly spreadsheet for this purpose for years!). The server-side uses Node and Express with a Mongo database, while the front-side is mostly jQuery and vanilla JS.</p>
+					<p><a href="https://future-balance.herokuapp.com">Live Version</a></p>
+					<p><a href="https://github.com/jasonlaning/future-balance">GitHub repository</a></p>
+				</section>
+
+				<section class="project">
+					<img src="./images/callmysenators-screenshots.png" alt="call my senators" class="screenshot" /><!--
+		   		  --><div class="proj-descr">
+					<p><span class="proj-title">Call My Senators </span> finds your US Senators by state and displays phone number, other contact information, committee memberships and recent voting record. Design emphasis is on ease of use, with a phone call button prominently displayed that initiates a call on mobile devices. This project is front-end only, using jQuery and vanilla JS, while also incorporating data from a couple of third-party web APIs.</p>
+					<p><a href="https://jasonlaning.github.io/call-my-senators">Live Version</a></p>
+					<p><a href="https://github.com/jasonlaning/call-my-senators">GitHub repository</a></p>
+				</section>
+			</section>
+
+			<section id="contact">
+				<h2>Contact</h2>
+				<a href="mailto:jason.laning@gmail.com" class="email">jason.laning@gmail.com</a>
+				<div class="social-container">
+					<a href="https://github.com/jasonlaning"><img src="./images/github.png" alt="github"></a><!--
+					--><a href="https://www.linkedin.com/in/jason-l-b0228313b/"><img src="./images/linkedin.png" alt="linkedin"></a><!--
+					--><a href="https://angel.co/jason-laning"><img src="./images/angellist.png" alt="angellist"></a><!--
+					--><a href="https://www.instagram.com/_jasonlaning/"><img src="./images/instagram.png" alt="instagram"></a>
+				</div>
+			</section>
+
+		</main>
+	<div class="wrapper">
+	<footer role="content-info">Footer</footer>
+</body>
+</html>
