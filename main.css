@@ -7,7 +7,7 @@ body {
   font-size: 18px;
   color: #444;
   text-align: center;
-  line-height: 1.4;
+  line-height: 1.5;
   margin: 0;
 }
 
@@ -64,8 +64,16 @@ header h1 {
     font-weight: 400;
 }
 
+.title {
+  font-weight: bold;
+}
+
+.title, h2, h3, h4, section a, .proj-title {
+    letter-spacing: .6px;
+}
+
 .headline {
-  color: #c1c1c1;
+  color: #a7a7a7;
   font-size: 80%;
 }
 
@@ -154,7 +162,7 @@ section a:hover {
   opacity: .5;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1175px) {
 
   header h1 {
     font-size: 30px;
@@ -166,7 +174,7 @@ section a:hover {
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
 
   header h1 {
     font-size: 26px;
@@ -178,11 +186,19 @@ section a:hover {
 
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
+
+  header {
+    padding-left: 10%;
+  }
 
   header h1 {
     font-size: 24px;
   }
+
+}
+
+@media screen and (max-width: 700px) {
 
   .screenshot {
     display: block;
@@ -195,13 +211,18 @@ section a:hover {
     padding: 0;
   }
 
+  .headline {
+    display: block;
+    line-height: 1.2;
+  }
+
+  .divider {
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
-
-  header h1 {
-    font-size: 20px;
-  }
 
   body {
     font-size: 16px;
@@ -209,14 +230,6 @@ section a:hover {
 
   .social-container img {
     width: 80px;
-  }
-
-  .headline {
-    display: block;
-  }
-
-  .divider {
-    display: none;
   }
 
   header {
@@ -229,6 +242,18 @@ section a:hover {
 
    .social-container img {
     width: 70px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+
+}
+
+@media screen and (max-width: 350px) {
+
+  header h1 {
+    font-size: 20px;
   }
 
 }
