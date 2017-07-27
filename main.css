@@ -14,6 +14,7 @@ body {
 
 h1, h2, h3, h4 {
   margin-top: 0;
+  color: #000;
 }
 
 h2 {
@@ -29,26 +30,65 @@ nav {
   height: 60px;
   line-height: 60px;
   text-align: left;
+  background-color: white;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.1); 
+  -moz-box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.1);
 }
 
 .hide {
   display: none;
 }
 
+.fadeHalf {
+  opacity: .5;
+}
+
+.fadeFull {
+  opacity: 0;
+}
+
+.nav-wrapper {
+  max-width: 1200px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
 .nav-container {
-  width: 50%;
-  display: inline-block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .nav-item {
   display: inline-block;
-  padding: 0 60px;
+  padding: 0 30px;
   height: 100%;
+  color: #b7b7b7;
+  text-decoration: none;
 }
 
-.nav-item:hover {
-  background-color: #d6d6d6;
-  border-bottom: solid 2px white;
+.nav-container .nav-item {
+  vertical-align: middle;
+}
+
+a.nav-item:hover {
+  color: gray;
+}
+
+.nav-title {
+  font-size: 24px;
+}
+
+.nav-title {
+  padding: 0;
+  color: #000;
+  font-weight: bold;
+  z-index: 1000;
 }
 
 header {
@@ -59,18 +99,26 @@ header {
   padding: 150px 0 12% 18%;
   height: 100vh;
   text-align: left;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
 }
 
 header h1 {
-    font-weight: 400;
+  font-weight: 400;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out
+}
+
+.nav-title, .title, h2, h3, h4, section a, .proj-title {
+    letter-spacing: .6px;
 }
 
 .title {
   font-weight: bold;
-}
-
-.title, h2, h3, h4, section a, .proj-title {
-    letter-spacing: .6px;
 }
 
 .headline {
@@ -89,7 +137,7 @@ section {
 }
 
 section h2 {
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid #444;
   margin-top: 20px;
   margin-bottom: 40px;
 }
@@ -187,6 +235,14 @@ section a:hover {
 
 }
 
+@media screen and (max-width: 900px) {
+
+  .nav-item {
+    padding: 0 20px;
+  }
+
+}
+
 @media screen and (max-width: 800px) {
 
   header {
@@ -195,6 +251,12 @@ section a:hover {
 
   header h1 {
     font-size: 24px;
+  }
+
+  .nav-container {
+    left: 225px;
+    text-align: left;
+    margin: 0;
   }
 
 }
@@ -237,6 +299,36 @@ section a:hover {
     background-position: bottom right 35%
   }
 
+  .nav-wrapper {
+    padding: 0;
+  }
+
+  .nav-container {
+    left: 180px;
+  }
+
+  .nav-title {
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .nav-container {
+    left: 140px;
+  }
+
+  .nav-item {
+    padding: 0 0 0 18px;
+    font-size: 14px;
+  }
+
+  .nav-title {
+    padding: 0 0 0 15px;
+    font-size: 18px;
+  }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -249,12 +341,48 @@ section a:hover {
     font-size: 22px;
   }
 
+  .nav-container {
+    left: 120px;
+  }
+
+  .nav-item {
+    font-size: 13px;
+  }
+
+  .nav-title {
+    padding: 0 0 0 15px;
+    font-size: 16px;
+  }
+
 }
 
 @media screen and (max-width: 350px) {
 
   header h1 {
     font-size: 20px;
+  }
+
+  .nav-item {
+    padding-left: 15px;
+    font-size: 12px;
+  }
+
+  .nav-title {
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (max-width: 315px) {
+
+
+  .nav-item {
+    padding-left: 13px;
+    font-size: 11px;
+  }
+
+  .nav-title {
+    font-size: 14px;
   }
 
 }

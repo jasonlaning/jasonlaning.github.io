@@ -9,15 +9,17 @@
 </head>
 <body class="hide">
 	<nav role="navigation" class="hide">
-		<div class="nav-container"></div><!--
-		 --><div class="nav-container">
-			<div class="nav-item">About</div>
-			<div class="nav-item">Portfolio</div>
-			<div class="nav-item">Contact</div>
+		<div class="nav-wrapper">
+			<a class="nav-item nav-title top" href="#top">Jason Laning</a>
+			<div class="nav-container">
+				<a class="nav-item about" href="#about">About</a>
+				<a class="nav-item portfolio" href="#portfolio">Portfolio</a>
+				<a class="nav-item contact" href="#contact">Contact</a>	
+			</div>	
 		</div>
 	</nav>
 	<header role="banner">
-		<h1><span class="title">Jason Laning</span><span class="divider"> | </span><span class="headline">Full-Stack Web Developer</span></h1>
+		<h1 class="fadeFull"><span class="title">Jason Laning</span><span class="divider"> | </span><span class="headline">Full-Stack Web Developer</span></h1>
 	</header>
 	<div class="wrapper">
 		<main role="main">
@@ -32,7 +34,7 @@
 				</div>
 			</section>
 
-			<section id="porfolio">
+			<section id="portfolio">
 				<h2>Portfolio</h2>
 				<section class="project">
 					<img src="./images/artseennyc-screenshots.png" alt="ArtSEEN NYC" class="screenshot" /><!--
@@ -47,17 +49,19 @@
 				<section class="project">
 					<img src="./images/futurebalance-screenshots.png" alt="future balance" class="screenshot" /><!--
 		   		  --><div class="proj-descr">
-					<p><span class="proj-title">FutureBalance </span> helps you track your repeating expenses and income and generates a calendar report that forecasts your daily account balances. The crux of this project rested on devising the algorithm to forecast financial balances based on varying dates and rates of repetition for multiple expenses and income, which should be of use to anyone whose bills aren't due on the exact same day that their paychecks arrive (I used to make a monthly spreadsheet for this purpose for years!). The server-side uses Node and Express with a Mongo database, while the front-side is mostly jQuery and vanilla JS.</p>
-					<p><a href="https://future-balance.herokuapp.com">Live Version</a></p>
-					<p><a href="https://github.com/jasonlaning/future-balance">GitHub repository</a></p>
+						<p><span class="proj-title">FutureBalance </span> helps you track your repeating expenses and income and generates a calendar report that forecasts your daily account balances. The crux of this project rested on devising the algorithm to forecast financial balances based on varying dates and rates of repetition for multiple expenses and income, which should be of use to anyone whose bills aren't due on the exact same day that their paychecks arrive (I used to make a monthly spreadsheet for this purpose for years!). The server-side uses Node and Express with a Mongo database, while the front-side is mostly jQuery and vanilla JS.</p>
+						<p><a href="https://future-balance.herokuapp.com">Live Version</a></p>
+						<p><a href="https://github.com/jasonlaning/future-balance">GitHub repository</a></p>
+					</div>
 				</section>
 
 				<section class="project">
 					<img src="./images/callmysenators-screenshots.png" alt="call my senators" class="screenshot" /><!--
 		   		  --><div class="proj-descr">
-					<p><span class="proj-title">Call My Senators </span> finds your US Senators by state and displays phone number, other contact information, committee memberships and recent voting record. Design emphasis is on ease of use, with a phone call button prominently displayed that initiates a call on mobile devices. This project is front-end only, using jQuery and vanilla JS, while also incorporating data from a couple of third-party web APIs.</p>
-					<p><a href="https://jasonlaning.github.io/call-my-senators">Live Version</a></p>
-					<p><a href="https://github.com/jasonlaning/call-my-senators">GitHub repository</a></p>
+						<p><span class="proj-title">Call My Senators </span> finds your US Senators by state and displays phone number, other contact information, committee memberships and recent voting record. Design emphasis is on ease of use, with a phone call button prominently displayed that initiates a call on mobile devices. This project is front-end only, using jQuery and vanilla JS, while also incorporating data from a couple of third-party web APIs.</p>
+						<p><a href="https://jasonlaning.github.io/call-my-senators">Live Version</a></p>
+						<p><a href="https://github.com/jasonlaning/call-my-senators">GitHub repository</a></p>
+					</div>
 				</section>
 			</section>
 
