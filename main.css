@@ -55,7 +55,7 @@ nav {
 }
 
 .nav-container {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
@@ -66,7 +66,7 @@ nav {
 
 .nav-item {
   display: inline-block;
-  padding: 0 30px;
+  margin: 0 30px;
   height: 100%;
   text-decoration: none;
 }
@@ -75,30 +75,20 @@ nav {
   vertical-align: middle;
 }
 
-a.nav-item:hover {
+a.about:hover, a.portfolio:hover, a.contact:hover {
   color: #bbb;
 }
 
-a.nav-item:focus, .nav-item {
+a.about:focus, a.portfolio:focus, a.contact:focus, .nav-item {
   color: #888;
 }
 
 .nav-title {
-  font-size: 24px;
-}
-
-.nav-title {
-  padding: 0;
+  margin: 0;
   font-weight: bold;
   z-index: 1000;
-}
-
-a.nav-title:hover {
-  color: gray;
-}
-
-a.nav-title:focus, .nav-title {
   color: #000;
+  font-size: 24px;
 }
 
 header {
@@ -248,7 +238,15 @@ section a:hover {
 @media screen and (max-width: 900px) {
 
   .nav-item {
-    padding: 0 20px;
+    margin: 0 20px;
+  }
+
+  .nav-container {
+    right: 25px;
+    left: auto;
+    width: auto;
+    text-align: right;
+    margin: 0;
   }
 
 }
@@ -261,12 +259,6 @@ section a:hover {
 
   header h1 {
     font-size: 24px;
-  }
-
-  .nav-container {
-    left: 225px;
-    text-align: left;
-    margin: 0;
   }
 
 }
@@ -309,33 +301,37 @@ section a:hover {
     background-position: bottom right 35%
   }
 
+  .nav-title {
+    font-size: 22px;
+  }
+
   .nav-wrapper {
-    padding: 0;
+    padding: 0 10px;
   }
 
   .nav-container {
-    left: 180px;
-  }
-
-  .nav-title {
-    font-size: 20px;
+    right: 10px;
   }
 
 }
 
 @media screen and (max-width: 500px) {
 
+  .nav-wrapper {
+    padding: 0;
+  }
+
   .nav-container {
-    left: 140px;
+    right: 20px;
   }
 
   .nav-item {
-    padding: 0 0 0 18px;
+    margin: 0 0 0 20px;
     font-size: 14px;
   }
 
   .nav-title {
-    padding: 0 0 0 15px;
+    margin: 0 0 0 20px;
     font-size: 18px;
   }
 
@@ -351,16 +347,12 @@ section a:hover {
     font-size: 22px;
   }
 
-  .nav-container {
-    left: 120px;
-  }
-
   .nav-item {
+    margin-left: 15px;
     font-size: 13px;
   }
 
   .nav-title {
-    padding: 0 0 0 15px;
     font-size: 16px;
   }
 
@@ -373,8 +365,11 @@ section a:hover {
   }
 
   .nav-item {
-    padding-left: 15px;
     font-size: 12px;
+  }
+
+  .nav-container {
+    right: 15px;
   }
 
   .nav-title {
@@ -385,9 +380,8 @@ section a:hover {
 
 @media screen and (max-width: 315px) {
 
-
   .nav-item {
-    padding-left: 13px;
+    margin-left: 13px;
     font-size: 11px;
   }
 
