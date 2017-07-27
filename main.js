@@ -2,7 +2,8 @@
 
 function fadeIn() {
 	$('body').fadeIn(500);
-	$('header h1').toggleClass('fadeFull');
+	$('header h1').toggleClass('fade-full');
+	$('.view-portfolio').toggleClass('fade-full');
 }
 
 function onScroll() {
@@ -12,16 +13,14 @@ function onScroll() {
 	$(window).scroll(function() {
 		currentPosition = $(this).scrollTop();
 		if((navFixed === true) && (currentPosition < 50) && (currentPosition < lastPosition)) {
-			console.log('1st', currentPosition, lastPosition);
 			$('nav').fadeOut(500);
-			$('header').toggleClass('fadeHalf');
-			$('header h1').toggleClass('fadeFull');
+			$('header').toggleClass('fade-half');
+			$('header h1').toggleClass('fade-full');
 			navFixed = false;
 		} else if ((navFixed === false) && (currentPosition > 50) && (lastPosition <= 50)) {
-			console.log('2nd', currentPosition, lastPosition);
 			$('nav').fadeIn(500);
-			$('header').toggleClass('fadeHalf');
-			$('header h1').toggleClass('fadeFull');
+			$('header').toggleClass('fade-half');
+			$('header h1').toggleClass('fade-full');
 			navFixed = true;
 		}
 		lastPosition = currentPosition;
