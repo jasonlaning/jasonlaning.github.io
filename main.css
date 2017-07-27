@@ -68,7 +68,6 @@ nav {
   display: inline-block;
   padding: 0 30px;
   height: 100%;
-  color: #b7b7b7;
   text-decoration: none;
 }
 
@@ -77,7 +76,11 @@ nav {
 }
 
 a.nav-item:hover {
-  color: gray;
+  color: #bbb;
+}
+
+a.nav-item:focus, .nav-item {
+  color: #888;
 }
 
 .nav-title {
@@ -86,9 +89,16 @@ a.nav-item:hover {
 
 .nav-title {
   padding: 0;
-  color: #000;
   font-weight: bold;
   z-index: 1000;
+}
+
+a.nav-title:hover {
+  color: gray;
+}
+
+a.nav-title:focus, .nav-title {
+  color: #000;
 }
 
 header {
