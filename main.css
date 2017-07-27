@@ -137,7 +137,7 @@ a.view-portfolio {
   color: #a7a7a7;
   border-radius: 5px;
   border: 1px solid #bbb;
-  padding: 15px 15px;
+  padding: 15px;
   margin-top: 15px;
   line-height: normal;
   text-transform: uppercase;
@@ -305,6 +305,10 @@ section a:hover {
 
   header h1 {
     font-size: 24px;
+  }
+
+  a.view-portfolio {
+   padding: 12px;
   }
 
 }
