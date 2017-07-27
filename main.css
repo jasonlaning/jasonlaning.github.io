@@ -133,12 +133,14 @@ header h1 {
 a.view-portfolio {
   text-decoration: none;
   display: inline-block;
-  font-size: 50%;
+  font-size: 45%;
   color: #a7a7a7;
   border-radius: 5px;
   border: 1px solid #bbb;
-  padding: 8px 15px;
+  padding: 15px 15px;
   margin-top: 15px;
+  line-height: normal;
+  text-transform: uppercase;
   -webkit-transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
   -ms-transition: opacity .5s ease-in-out;
