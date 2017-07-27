@@ -39,13 +39,13 @@ function navBar() {
 	$('a.about').on('click', function(event) {
 		event.preventDefault();
 		$('html, body').animate({
-		scrollTop: $('#about').offset().top - 30
+		scrollTop: $('#about').offset().top - 40
 		}, 800);
 	})
 	$('a.portfolio').on('click', function(event) {
 		event.preventDefault();
 		$('html, body').animate({
-		scrollTop: $('#portfolio').offset().top - 30
+		scrollTop: $('#portfolio').offset().top - 40
 		}, 800);
 	})
 	$('a.contact').on('click', function(event) {
