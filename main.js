@@ -10,8 +10,24 @@ function onScroll() {
 	var lastPosition = 0;
 	var currentPosition = 0;
 	var navFixed = false;
+	var aboutViewed = false;
+	var aboutTop = 0;
+	var aboutBottom = 0;
+	var windowBottom = 0;
 	$(window).scroll(function() {
 		currentPosition = $(this).scrollTop();
+		if(!(aboutViewed)) {
+			aboutTop = ($('.columns p:nth-child(1)').offset()).top;
+			aboutBottom = aboutTop + $('.columns p:nth-child(1)').height();
+			windowBottom = currentPosition + $(window).height();
+
+			if ((aboutBottom <= windowBottom) && (aboutTop >= currentPosition)) {
+				$('.columns p:nth-child(2)').toggleClass('fade-90');
+				$('.columns p:nth-child(3)').toggleClass('fade-90');
+				aboutViewed = true;
+			}
+		} 
+			
 		if((navFixed === true) && (currentPosition < 50) && (currentPosition < lastPosition)) {
 			$('nav').fadeOut(500);
 			$('header').toggleClass('fade-half');

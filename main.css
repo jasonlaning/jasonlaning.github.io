@@ -53,6 +53,10 @@ nav {
   opacity: .5;
 }
 
+.fade-90 {
+  opacity: .1;
+}
+
 .fade-full {
   opacity: 0;
 }
@@ -163,6 +167,10 @@ a.view-portfolio:hover {
   border: 1px solid #ccc;
 }
 
+#portfolio .project:nth-child(4) {
+  padding-bottom: 0;
+}
+
 .title {
   font-weight: bold;
 }
@@ -189,17 +197,42 @@ section h2 {
 }
 
 #about .columns {
-   -webkit-columns: 3 300px;
-  -moz-columns: 3 300px;
-  columns: 3 300px;
-  -webkit-column-gap: 2em;
-  -moz-column-gap: 2em;
-  column-gap: 2em;
   text-align: left;
 }
 
 .columns p {
-  margin-top: 0;
+  display: inline-block;
+  width: 33%;
+  padding: 0 2%;
+  margin: 0;
+  vertical-align: top;
+  overflow: visible;
+}
+
+.columns p:nth-child(2) {
+  -webkit-transition: opacity  1s ease-in-out;
+  -moz-transition: opacity   1s ease-in-out;
+  -ms-transition: opacity  1s ease-in-out;
+  -o-transition: opacity   1s ease-in-out;
+  transition: opacity  1s ease-in-out;
+  -webkit-transition-delay: .5s;
+  -moz-transition-delay: .5s;
+  -ms-transition-delay: .5s;
+  -o-transition-delay: .5s;
+  transition-delay: .5s;
+}
+
+.columns p:nth-child(3) {
+  -webkit-transition: opacity  2s ease-in-out;
+  -moz-transition: opacity   2s ease-in-out;
+  -ms-transition: opacity  2s ease-in-out;
+  -o-transition: opacity   2s ease-in-out;
+  transition: opacity  2s ease-in-out;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -ms-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
 }
 
 .project {
@@ -282,6 +315,12 @@ section a:hover {
 }
 
 @media screen and (max-width: 900px) {
+
+  .columns p {
+    display: block;
+    width: auto;
+    padding: 0 0 30px 0;
+  }
 
   .nav-item {
     margin: 0 20px;
